@@ -5,10 +5,289 @@
 }
 
 body {
+  margin: auto;
   display: flex;
-  height: 100px;
-  width: 100px;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1440px;
+  justify-content: center;
+}
+body main {
   background-color: #1B1B1A;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 1440px;
+  width: 100%;
+}
+body main .header {
+  padding: 76px 123px;
+  display: flex;
+  max-width: 1440px;
+  width: 100%;
+  justify-content: space-between;
+}
+body main .header-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  column-gap: 39px;
+}
+body main .header .nav-wrapper {
+  display: flex;
+  align-items: center;
+}
+body main .header nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body main .header .nav__text {
+  font-family: Lab Grotesque, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #949494;
+}
+body main .header .active {
+  color: #FFCF7A;
+}
+body main .header ul {
+  column-gap: 50px;
+  display: flex;
+  flex-direction: row;
+}
+body main .header li {
+  list-style: none;
+}
+body main .offer-section {
+  row-gap: 30px;
+  flex-direction: column;
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  padding: 0 123px 123px 0;
+  background-image: url("assets/png/kamin4 2.png");
+  background-repeat: no-repeat;
+  background-position: right;
+}
+body main .offer-section .general-container {
+  display: flex;
+  flex-direction: row;
+  column-gap: 80px;
+  padding-top: 55px;
+}
+body main .offer-section .general-container__item {
+  max-width: 116px;
+  width: 100%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+}
+body main .benefits-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 123px 75px 123px 75px;
+}
+body main .benefits-section__container {
+  display: flex;
+  flex-direction: row;
+  column-gap: 140px;
+}
+body main .benefits-section__description {
+  display: flex;
+  align-items: center;
+  column-gap: 30px;
+}
+body main .benefits-section__font {
+  font-family: "Lab Grotesque", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  text-align: center;
+  color: #FFFFFF;
+}
+body main .fuel-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 123px 206px;
+}
+body main .fuel-section__font {
+  font-family: "Lab Grotesque", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 33px;
+  color: #FFFFFF;
+}
+body main .fuel-section__description {
+  max-width: 370px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+  text-align: start;
+}
+body main .smart-section {
+  padding-top: 123px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+body main .smart-section .stripe {
+  margin-top: 40px;
+  width: 40px;
+  border-top: 1px solid #949494;
+}
+body main .smart-section__title {
+  display: flex;
+  flex-direction: row;
+  column-gap: 30px;
+}
+body main .smart-section__font {
+  margin-top: 340px;
+  font-family: "Lab Grotesque", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 33px;
+  text-align: center;
+  color: #464239;
+}
+body main .smart-section__description {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  height: 600px;
+  width: 1306px;
+  column-gap: 45px;
+  padding-left: 250px;
+  background-image: url("assets/png/kamin6 1.png");
+}
+body main .smart-section .left {
+  margin-right: 50px;
+}
+body main .smart-section .right {
+  margin-left: 32px;
+}
+body main .settings-section {
+  display: flex;
+  flex-direction: row;
+  column-gap: 80px;
+  padding: 50px 123px;
+}
+body main .settings-section__variants {
+  display: flex;
+  flex-direction: row;
+  column-gap: 94px;
+}
+body main .settings-section__variants .variants__container {
+  row-gap: 5px;
+  display: flex;
+  flex-direction: column;
+}
+body main .settings-section__pointer {
+  display: flex;
+  flex-direction: row;
+}
+body main .settings-section__left {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  row-gap: 20px;
+  padding-top: 60px;
+}
+body main .settings-section .line {
+  border-bottom: 1px solid rgba(255, 207, 122, 0.72);
+}
+body main .settings-section .point-line {
+  position: relative;
+  top: 39px;
+  margin-left: -3px;
+  height: 40px;
+  width: 20px;
+  clip-path: polygon(17% 0, 11% 0, 87% 100%, 93% 100%);
+  background: rgba(255, 207, 122, 0.72);
+}
+body .header-font {
+  font-family: "Scania Sans CY Headline", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 70px;
+  letter-spacing: 0.105em;
+  color: #FFFFFF;
+}
+body .price-font {
+  font-family: "Lab Grotesque", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 28px;
+  line-height: 40px;
+  letter-spacing: 0.05em;
+  color: #FFCF7A;
+}
+body .mini-font {
+  font-family: "Lab Grotesque", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  text-align: center;
+  color: #FFFFFF;
+}
+body .description-font {
+  font-family: "Lab Grotesque", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 0.05em;
+  color: #6D6D6D;
+}
+body .general-font {
+  font-family: "Lab Grotesque", sans-serif;
+  font-weight: 250;
+  font-size: 64px;
+  line-height: 80px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  background: linear-gradient(226.43deg, #FFFFFF 49.37%, rgba(255, 255, 255, 0) 99.78%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.phone-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  width: 50px;
+  margin-left: 60px;
+  border-radius: 5px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  background: linear-gradient(#F98B4D, #FFD9C4);
+}
+
+@font-face {
+  font-family: "RalewayRegular";
+  src: url("./fonts/Scania/ScaniaSansCYHeadline-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Lab Grotesque";
+  src: url("./fonts/Lab/LabGrotesque-Light.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
 }
 
 /*# sourceMappingURL=style.css.map */
