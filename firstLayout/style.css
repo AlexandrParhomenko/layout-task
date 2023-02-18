@@ -184,6 +184,9 @@ body main .settings-section {
   column-gap: 80px;
   padding: 50px 123px;
 }
+body main .settings-section__text {
+  padding-bottom: 30px;
+}
 body main .settings-section__variants {
   display: flex;
   flex-direction: row;
@@ -203,7 +206,13 @@ body main .settings-section__left {
   align-items: flex-start;
   flex-direction: column;
   row-gap: 20px;
-  padding-top: 60px;
+  padding-top: 75px;
+}
+body main .settings-section .left-block {
+  padding-top: 110px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
 }
 body main .settings-section .line {
   border-bottom: 1px solid rgba(255, 207, 122, 0.72);
@@ -216,6 +225,17 @@ body main .settings-section .point-line {
   width: 20px;
   clip-path: polygon(17% 0, 11% 0, 87% 100%, 93% 100%);
   background: rgba(255, 207, 122, 0.72);
+}
+body main .settings-section .info-block {
+  width: 537px;
+  height: 346px;
+  background-color: #121212;
+}
+body main .settings-section .info-block .arrow-wrapper {
+  display: flex;
+  column-gap: 14px;
+  padding-top: 283px;
+  padding-left: 40px;
 }
 body .header-font {
   font-family: "Scania Sans CY Headline", sans-serif;
