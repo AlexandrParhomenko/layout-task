@@ -108,6 +108,10 @@ body {
       align-items: center;
       text-align: center;
       padding: 123px 75px 123px 75px;
+      background-image: url("assets/png/blur1.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
 
       &__container {
         display: flex;
@@ -134,9 +138,75 @@ body {
 
     .fuel-section {
       display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 123px 206px;
+      flex-direction: row;
+      padding: 0 190px;
+      column-gap: 40px;
+
+      &__logo {
+        display: flex;
+        flex-direction: row;
+        column-gap: 20px;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .circle {
+        height: 100px;
+        width: 100px;
+        border-radius: 50px;
+        border: 1px solid #FFCF7A;
+        position: absolute;
+        top: 2095px;
+        left: 812px;
+      }
+
+      .circle-second {
+        height: 140px;
+        width: 140px;
+        border-radius: 90px;
+        border: 1px solid #FFCF7A;
+        position: absolute;
+        top: 2181px;
+        left: 920px;
+      }
+
+      .image-wrapper {
+        display: flex;
+        flex-direction: column;
+        height: 660px;
+        width: 660px;
+        background-image: url("assets/png/Group 8.png");
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+
+      .blur {
+        position: relative;
+        left: 90px;
+        top: -35px;
+      }
+
+      .minutes-img {
+        position: relative;
+        top: -410px;
+        left: 380px;
+      }
+
+      &__block {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        row-gap: 20px;
+        order: 2;
+        position: relative;
+        top: -220px;
+      }
+
+      &__container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+      }
 
       &__font {
         font-family: 'Lab Grotesque', sans-serif;
@@ -153,6 +223,7 @@ body {
         flex-direction: column;
         row-gap: 30px;
         text-align: start;
+        padding-top: 80px;
       }
     }
 
@@ -162,11 +233,6 @@ body {
       align-items: center;
       flex-direction: column;
 
-      .stripe {
-        margin-top: 40px;
-        width: 40px;
-        border-top: 1px solid #949494;;
-      }
 
       &__title {
         display: flex;
@@ -509,6 +575,12 @@ body {
     }
   }
 
+  .stripe {
+    margin-top: 40px;
+    width: 40px;
+    border-top: 1px solid #949494;;
+  }
+
   .button-wrapper {
     margin-top: 35px;
     display: flex;
@@ -567,6 +639,7 @@ body {
     line-height: 80px;
     letter-spacing: 0.05em;
     text-transform: uppercase;
+
     background: linear-gradient(226.43deg, #FFFFFF 49.37%, rgba(255, 255, 255, 0) 99.78%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;

@@ -95,6 +95,10 @@ body main .benefits-section {
   align-items: center;
   text-align: center;
   padding: 123px 75px 123px 75px;
+  background-image: url("assets/png/blur1.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
 }
 body main .benefits-section__container {
   display: flex;
@@ -117,9 +121,67 @@ body main .benefits-section__font {
 }
 body main .fuel-section {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  padding: 0 190px;
+  column-gap: 40px;
+}
+body main .fuel-section__logo {
+  display: flex;
+  flex-direction: row;
+  column-gap: 20px;
   align-items: center;
-  padding: 123px 206px;
+  justify-content: center;
+}
+body main .fuel-section .circle {
+  height: 100px;
+  width: 100px;
+  border-radius: 50px;
+  border: 1px solid #FFCF7A;
+  position: absolute;
+  top: 2095px;
+  left: 812px;
+}
+body main .fuel-section .circle-second {
+  height: 140px;
+  width: 140px;
+  border-radius: 90px;
+  border: 1px solid #FFCF7A;
+  position: absolute;
+  top: 2181px;
+  left: 920px;
+}
+body main .fuel-section .image-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 660px;
+  width: 660px;
+  background-image: url("assets/png/Group 8.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+body main .fuel-section .blur {
+  position: relative;
+  left: 90px;
+  top: -35px;
+}
+body main .fuel-section .minutes-img {
+  position: relative;
+  top: -410px;
+  left: 380px;
+}
+body main .fuel-section__block {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  row-gap: 20px;
+  order: 2;
+  position: relative;
+  top: -220px;
+}
+body main .fuel-section__container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 body main .fuel-section__font {
   font-family: "Lab Grotesque", sans-serif;
@@ -135,17 +197,13 @@ body main .fuel-section__description {
   flex-direction: column;
   row-gap: 30px;
   text-align: start;
+  padding-top: 80px;
 }
 body main .smart-section {
   padding-top: 123px;
   display: flex;
   align-items: center;
   flex-direction: column;
-}
-body main .smart-section .stripe {
-  margin-top: 40px;
-  width: 40px;
-  border-top: 1px solid #949494;
 }
 body main .smart-section__title {
   display: flex;
@@ -443,6 +501,11 @@ body .footer__font {
   line-height: 18px;
   letter-spacing: 0.05em;
   color: #6D6D6D;
+}
+body .stripe {
+  margin-top: 40px;
+  width: 40px;
+  border-top: 1px solid #949494;
 }
 body .button-wrapper {
   margin-top: 35px;
