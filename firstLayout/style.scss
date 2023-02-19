@@ -274,8 +274,251 @@ body {
         }
       }
     }
+
+    .catalog-section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+
+      &__button {
+        font-family: 'Lab Grotesque', sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 30px;
+        text-align: center;
+        color: #121212;
+      }
+    }
+
+    .fireplace-section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 100px;
+
+      &__variants {
+        display: flex;
+        padding: 50px 0 90px 0;
+        flex-direction: row;
+        column-gap: 42px;
+      }
+
+      .fireplace-window {
+        width: 370px;
+        height: 267px;
+        background-color: #121212;
+      }
+    }
+
+    .generator-section {
+      display: flex;
+      flex-direction: column;
+
+      &__wrapper {
+        display: flex;
+        flex-direction: row;
+        column-gap: 80px;
+        padding-top: 67px;
+      }
+
+      &__font {
+        font-family: 'Lab Grotesque', sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 10px;
+        line-height: 55px;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+        color: rgba(255, 255, 255, 0.5);
+      }
+
+      &__range-wrapper {
+        display: flex;
+        flex-direction: row;
+        column-gap: 39px;
+      }
+
+      .slider {
+        margin: auto;
+        outline: none;
+        padding: 0;
+        width: 403px;
+        height: 2px;
+        background-color: #646464;
+        background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #FFCF7A), color-stop(100%, #FFCF7A));
+        background-size: 75% 100%;
+        background-repeat: no-repeat;
+        border-radius: 10px;
+        cursor: pointer;
+        -webkit-appearance: none;
+      }
+
+      .slider::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 30px;
+        height: 30px;
+        background: #FFCF7A;
+        cursor: pointer;
+        border-radius: 2px;
+      }
+
+      .generator-section-block {
+        display: flex;
+        flex-direction: column;
+        row-gap: 30px;
+      }
+
+      &__panel {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .checkbox-wrapper {
+        width: 217px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+
+      .checkbox {
+        display: grid;
+        place-content: center;
+        appearance: none;
+        background-color: #1B1B1A;
+        margin: 0;
+        font: inherit;
+        color: currentColor;
+        width: 1.15em;
+        height: 1.15em;
+        border-radius: 2px;
+        transform: translateY(-0.075em);
+        border: 1.5px solid #FFCF7A;
+      }
+
+      .checkbox::before {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 17px;
+        content: "+";
+        width: 1.16em;
+        height: 1.16em;
+        transform: scale(0);
+        transition: 120ms transform ease-in-out;
+        box-shadow: inset 2em 1em #FFCF7A;
+        border-radius: 2px;
+      }
+
+      .checkbox:checked::before {
+        transform: scale(1);
+      }
+
+      .checkbox-container {
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+      }
+
+      .checkbox-table {
+        display: flex;
+        flex-direction: row;
+        column-gap: 140px;
+      }
+
+      .control-panel {
+        display: flex;
+        flex-direction: row;
+        column-gap: 200px;
+        padding: 80px 0 100px 0;
+
+        &__el {
+          display: flex;
+          flex-direction: column;
+        }
+
+        .color {
+          appearance: none;
+          -moz-appearance: none;
+          -webkit-appearance: none;
+          background: none;
+          cursor: pointer;
+          height: 30px;
+          padding: 0;
+          width: 25px;
+          border: none;
+        }
+        ::-webkit-color-swatch{
+          border-radius: 60px;
+        }
+      }
+    }
+    .contact-section {
+      padding: 72px 120px;
+      background-color: #121212;
+
+      &__container {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        column-gap: 210px;
+        padding-top: 80px;
+      }
+
+      &__bright-font {
+        font-family: 'Lab Grotesque', sans-serif;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 22px;
+        line-height: 36px;
+        color: #FFFFFF;
+      }
+      &__block {
+        display: flex;
+        flex-direction: column;
+        width: 250px;
+      }
+      .contact {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 279px;
+        height: 60px;
+        border: 1px solid #FFCF7A;
+        border-radius: 2px;
+      }
+    }
   }
 
+  .footer {
+    max-width: 1440px;
+    width: 100%;
+    padding: 20px 120px;
+    border-top: 1px solid #1B1B1A;
+    background-color: #121212;
+    &__font {
+      font-family: 'Lab Grotesque', sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 18px;
+      letter-spacing: 0.05em;
+      color: #6D6D6D;
+    }
+  }
+
+  .button-wrapper {
+    margin-top: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 284px;
+    height: 60px;
+    background: linear-gradient(#F98B4D, #FFD9C4);
+    border-radius: 5px;
+  }
 
   .header-font {
     font-family: "Scania Sans CY Headline", sans-serif;
@@ -327,6 +570,15 @@ body {
     background: linear-gradient(226.43deg, #FFFFFF 49.37%, rgba(255, 255, 255, 0) 99.78%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+  }
+
+  .contact-section__font {
+    font-family: 'Lab Grotesque', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 36px;
+    color: #949494;
   }
 }
 
