@@ -131,6 +131,11 @@ main .header .service-list {
   padding: 30px 0;
   column-gap: 40px;
 }
+@media (max-width: 1400px) {
+  main .header .service-list {
+    column-gap: 20px;
+  }
+}
 main .ad {
   display: flex;
   height: 604px;
@@ -166,6 +171,11 @@ main .ad__description-title {
   line-height: 56px;
   color: white;
 }
+@media (max-width: 1400px) {
+  main .ad .ad__description {
+    margin-left: 100px;
+  }
+}
 main .offer-section {
   height: auto;
   display: flex;
@@ -180,7 +190,6 @@ main .offer-section__choice {
   padding-top: 80px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
   padding-bottom: 20px;
 }
 main .offer-section__font {
@@ -192,9 +201,11 @@ main .offer-section__font {
   color: #000000;
 }
 main .offer-section__wrapper {
+  height: auto;
+  flex-wrap: wrap;
   display: flex;
   flex-direction: row;
-  column-gap: 30px;
+  gap: 30px;
 }
 main .offer-section__item {
   row-gap: 20px;
@@ -206,21 +217,34 @@ main .offer-section__item {
   height: 363px;
   width: 255px;
 }
+@media (max-width: 1400px) {
+  main .offer-section .offer-section__wrapper {
+    max-width: 540px;
+  }
+  main .offer-section .offer-section__choice {
+    justify-content: center;
+    padding-bottom: 40px;
+  }
+}
 main .promo-wrapper {
   padding: 100px 0 132px 0;
   display: flex;
   flex-direction: row;
-  column-gap: 30px;
+  gap: 30px;
+  max-width: 1920px;
+  width: 100%;
+  justify-content: center;
 }
 main .promo-wrapper .promo {
   align-items: center;
-  column-gap: 65px;
   background-color: #66C05D;
-  padding-left: 40px;
-  width: 540px;
+  padding: 0 40px;
+  max-width: 540px;
+  width: 100%;
   height: 212px;
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
 }
 main .promo-wrapper .promo__content {
   max-width: 250px;
@@ -247,11 +271,25 @@ main .promo-wrapper .promo__content__title {
   line-height: 21px;
   color: #FFFFFF;
 }
+@media (max-width: 1400px) {
+  main .promo-wrapper {
+    flex-wrap: wrap;
+  }
+}
 main .contact-wrapper {
   display: flex;
   align-items: center;
   flex-direction: row;
   column-gap: 40px;
+}
+@media (max-width: 1400px) {
+  main .header__bottom {
+    justify-content: center;
+    column-gap: 50px;
+  }
+  main .service-list {
+    padding: 20px 0;
+  }
 }
 
 .social-wrapper {
@@ -302,6 +340,11 @@ main .contact-wrapper {
   width: 100%;
   display: flex;
   flex-direction: row;
+}
+@media (max-width: 1400px) {
+  .footer .footer__link {
+    padding: 0 40px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

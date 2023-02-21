@@ -139,7 +139,7 @@ body main .fuel-section .circle {
   border: 1px solid #FFCF7A;
   position: absolute;
   top: 2095px;
-  left: 812px;
+  left: 51%;
 }
 body main .fuel-section .circle-second {
   height: 140px;
@@ -148,7 +148,7 @@ body main .fuel-section .circle-second {
   border: 1px solid #FFCF7A;
   position: absolute;
   top: 2181px;
-  left: 920px;
+  left: 57%;
 }
 body main .fuel-section .image-wrapper {
   display: flex;

@@ -157,7 +157,7 @@ body {
         border: 1px solid #FFCF7A;
         position: absolute;
         top: 2095px;
-        left: 812px;
+        left: 51%;
       }
 
       .circle-second {
@@ -167,7 +167,7 @@ body {
         border: 1px solid #FFCF7A;
         position: absolute;
         top: 2181px;
-        left: 920px;
+        left: 57%;
       }
 
       .image-wrapper {
@@ -516,11 +516,13 @@ body {
           width: 25px;
           border: none;
         }
-        ::-webkit-color-swatch{
+
+        ::-webkit-color-swatch {
           border-radius: 60px;
         }
       }
     }
+
     .contact-section {
       padding: 72px 120px;
       background-color: #121212;
@@ -541,11 +543,13 @@ body {
         line-height: 36px;
         color: #FFFFFF;
       }
+
       &__block {
         display: flex;
         flex-direction: column;
         width: 250px;
       }
+
       .contact {
         display: flex;
         align-items: center;
@@ -564,6 +568,7 @@ body {
     padding: 20px 120px;
     border-top: 1px solid #1B1B1A;
     background-color: #121212;
+
     &__font {
       font-family: 'Lab Grotesque', sans-serif;
       font-style: normal;
